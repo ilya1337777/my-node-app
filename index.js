@@ -1,8 +1,9 @@
-const http = require('http');
-const server = http.createServer((req, res) => {
-res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-res.end('<h1>Привет, мир!</h1>');
-});const PORT = 3000;
-server.listen(PORT, () => {
-console.log(`Сервер запущен на http://localhost:${PORT}`);
-});
+console.log("Романюк Илья Сергеевич"); 
+console.log("401"); 
+let pi = 0;
+for (let i = 0; i < 2000000; i++) {
+    pi += (Math.pow(-1, i)) / (2 * i + 1);
+}
+pi = pi * 4;
+
+console.log("Число ПИ: " + pi);
