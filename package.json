@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "event-loop-lab",
   "version": "1.0.0",
   "description": "Лабораторная работа № 12: Event Loop и EventEmitter",
@@ -9,5 +9,10 @@
     "demo:user-tracker": "node userTracker-demo.js"
   },
   "author": "Ваше Имя",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "archiver": "^7.0.1"
+  }
 }
