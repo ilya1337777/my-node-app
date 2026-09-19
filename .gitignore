@@ -1,3 +1,12 @@
 node_modules/
 .env
 .DS_Store
+
+# ЛР №13 - временные тестовые данные
+test-data/
+test-data-promises/
+test-data-hybrid/
+perf-data/
+data/
+data-promises/
+data-hybrid/
