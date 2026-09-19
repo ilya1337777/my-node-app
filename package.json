@@ -1,13 +1,18 @@
 {
-  "name": "mi-node-app",
+  "name": "event-loop-lab",
   "version": "1.0.0",
-  "description": "",
+  "description": "Лабораторная работа № 12: Event Loop и EventEmitter",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "demo:event-loop": "node event-loop-demo.js",
+    "demo:user-tracker": "node userTracker-demo.js"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Ваше Имя",
   "license": "ISC",
-  "type": "commonjs"
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "archiver": "^7.0.1"
+  }
 }

@@ -1,8 +1,10 @@
 node_modules/
+logs.txt
+*.log
 .env
 .DS_Store
 
-# ЛР №13 - временные тестовые данные
+# Lab 13 вЂ” С‚РµСЃС‚РѕРІС‹Рµ РґР°РЅРЅС‹Рµ
 test-data/
 test-data-promises/
 test-data-hybrid/
@@ -10,3 +12,15 @@ perf-data/
 data/
 data-promises/
 data-hybrid/
+
+# Lab 14 вЂ” temporary data
+project_16/
+test_scan_16/
+source_16/
+backup_16/
+backup_16.zip
+data_16.txt
+processed_16.txt
+student_16.txt
+report_16.json
+sync_report_16.txt
