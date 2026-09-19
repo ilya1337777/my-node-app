@@ -1,3 +1,16 @@
 node_modules/
 .env
 .DS_Store
+
+# Lab 14 - temporary data
+project_16/
+test_scan_16/
+source_16/
+backup_16/
+backup_16.zip
+data_16.txt
+processed_16.txt
+student_16.txt
+report_16.json
+sync_report_16.txt
+logs.txt
