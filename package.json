@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "event-loop-lab",
   "version": "1.0.0",
   "description": "Лабораторная работа № 12: Event Loop и EventEmitter",

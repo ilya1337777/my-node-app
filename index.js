@@ -1,4 +1,4 @@
-const http = require('http');
+﻿const http = require('http');
 const { EventEmitter } = require('events');
 const logger = require('./logger');
 const { OrderHandler, computePi } = require('./orderHandler');
@@ -6,18 +6,16 @@ const { OrderHandler, computePi } = require('./orderHandler');
 const orderHandler = new OrderHandler();
 
 orderHandler.on('order:start', (orderId) => {
-  console.log(`[order:start] Заказ #${orderId} начат`);
+  console.log(`→ [order:start] Заказ #${orderId} начат`);
 });
 
 orderHandler.on('order:processing', ({ orderId, message }) => {
-  console.log(`[order:processing] Заказ #${orderId}: ${message}`);
+  console.log(`→ [order:processing] Заказ #${orderId}: ${message}`);
 });
 
 orderHandler.on('order:complete', ({ orderId, sum }) => {
   const pi = computePi();
-  console.log(
-    ` Заказ #${orderId} завершён на сумму ${sum} руб. PI = ${pi.toFixed(7)}`
-  );
+  console.log(`💰 Заказ #${orderId} завершён на сумму ${sum} руб. PI = ${pi.toFixed(7)}`);
 });
 
 class AppServer extends EventEmitter {
@@ -76,3 +74,8 @@ app.on('server:stopped', () => {
 });
 
 app.start(3000);
+
+// Эмуляция остановки через 10 секунд (по заданию 3.3)
+setTimeout(() => {
+  app.stop();
+}, 10000);

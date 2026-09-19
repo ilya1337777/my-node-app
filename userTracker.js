@@ -1,7 +1,6 @@
-const { EventEmitter } = require('events');
+﻿const { EventEmitter } = require('events');
 
 class UserTracker extends EventEmitter {
-
   trackAction(userId, action, metadata = {}) {
     const event = {
       userId,

@@ -1,10 +1,7 @@
-const { EventEmitter } = require('events');
-
+﻿const { EventEmitter } = require('events');
 
 class OrderHandler extends EventEmitter {
-
   processOrder(orderId) {
-
     this.emit('order:start', orderId);
 
     setTimeout(() => {
@@ -23,7 +20,7 @@ class OrderHandler extends EventEmitter {
 
 function computePi() {
   let pi = 0;
-  const iterations = 10_000_000; // больше итераций — выше точность
+  const iterations = 10_000_000;
 
   for (let i = 0; i < iterations; i++) {
     const sign = i % 2 === 0 ? 1 : -1;
