@@ -1,13 +1,13 @@
-{
-  "name": "mi-node-app",
+﻿{
+  "name": "lab16-express",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+  "dependencies": {
+    "express": "^4.21.2",
+    "compression": "^1.7.5",
+    "express-rate-limit": "^7.4.1"
+  }
 }
